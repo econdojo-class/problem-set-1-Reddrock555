@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\today}     
+\fancyhead[R]{Aman Dongre}  
+
+\renewcommand{\headrulewidth}{0.4pt}  
+
+\title{Homework Assignment : Python and Latex Practice}
+\author{Aman Dongre}
+\date{September 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{center}
+ In this Homework Assignment report, We learnt about the basic Python function codes and tasks and executing Python scripts with their Mathematical Explanations scripts.   
+\end{center}
+\section{Python Code}
+    \quad The Python Code for the assignment is shown below :
+    \\\textbf{Task 1:}
+    \\\begin{lstlisting}[language = Python]
+        x = 5  # integer
+y = 2.5  # float
+
+
+addition = x + y
+subtraction = y - x
+multiplication = x * y
+power = x ** 2
+floor_division = x // 2
+
+print("Addition (x + y):", addition)
+print("Subtraction (y - x):", subtraction)
+print("Multiplication (x * y):", multiplication)
+print("x raised to the power of 2:", power)
+print("Floor division (x // 2):", floor_division)
+    \end{lstlisting}
+    \\\textbf{Task 2:}\begin{lstlisting}[language = Python]
+    my_list = [1, 2, 3, 4, 5]
+my_list[2] = "hello"
+my_list.append("world")
+my_list.pop(0)
+print("Final list:", my_list)
+\end{lstlisting}
+\\\textbf{Task 3:}\\\begin{lstlisting}[language = Python]
+  # Create the dictionary
+student_scores = {
+    'Alice': 85,
+    'Bob': 90,
+    'Charlie': 78
+}
+
+# Add a new student 'David' with a score of 88
+student_scores['David'] = 88
+
+# Update 'Alice''s score to 95
+student_scores['Alice'] = 95
+
+# Delete 'Charlie' from the dictionary
+del student_scores['Charlie']
+
+print("Final dictionary:", student_scores)  
+\end{lstlisting}
+\\\textbf{Task 4:}\\\begin{lstlisting}[language = Python]
+  # Define the function to calculate the area of a rectangle
+def calculate_area(width, height):
+    return width * height
+
+# Call the function with width=5 and height=10
+result = calculate_area(5, 10)
+
+# Print the result
+print("The area of the rectangle is:", result)  
+\end{lstlisting}
+\\\textbf{Task 5:}\\\begin{lstlisting}[language = Python]
+  # Define the Animal class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        print("The animal speaks")
+
+# Define the Dog subclass that inherits from Animal
+class Dog(Animal):
+    def speak(self):
+        print("Woof! Woof!")
+
+# Create an instance of Dog with the name "Buddy"
+buddy = Dog("Buddy")
+
+# Call the speak method
+buddy.speak()  
+\end{lstlisting}
+\section{Mathematical Explanation}
+\textbf{In Task 4:}
+\\The formula for calculating the area of a rectangle is explained below:
+\[
+A = \text{width} \times \text{height}
+\]
+where \( A \) is the area, and the width and height are the dimensions of the rectangle which is the length and breadth of the triangle.\\The other tasks mainly focused on programming concepts rather than mathematical calculations.
+\section{Conclusion}
+The assignment helped me learn about the basic concepts of Python and scripts executing them such as creating a class and also how to create documents in Latex.
+
+\end{document}
